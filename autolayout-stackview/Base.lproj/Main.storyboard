@@ -24,9 +24,23 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSv-Fs-F9C">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80085" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-wf-HxR">
-                                                <rect key="frame" x="0.0" y="10" width="375" height="86"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDp-Vb-nod">
+                                                <rect key="frame" x="8" y="56" width="359" height="44"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="7ye-fj-hlO"/>
+                                                    <constraint firstAttribute="width" constant="359" id="qDC-Lk-lKo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80085" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-wf-HxR">
+                                                <rect key="frame" x="8" y="8" width="359" height="48"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="359" id="47j-bi-xfH"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -34,10 +48,13 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="4hj-wf-HxR" firstAttribute="top" secondItem="DSv-Fs-F9C" secondAttribute="top" constant="10" id="CRG-CX-X0C"/>
-                                            <constraint firstAttribute="trailing" secondItem="4hj-wf-HxR" secondAttribute="trailing" id="SLy-9K-GuW"/>
-                                            <constraint firstItem="4hj-wf-HxR" firstAttribute="leading" secondItem="DSv-Fs-F9C" secondAttribute="leading" id="bHD-le-3yg"/>
-                                            <constraint firstAttribute="bottom" secondItem="4hj-wf-HxR" secondAttribute="bottom" constant="10" id="wPK-HI-UJu"/>
+                                            <constraint firstItem="kDp-Vb-nod" firstAttribute="top" secondItem="4hj-wf-HxR" secondAttribute="bottom" id="CCH-j7-qlQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="kDp-Vb-nod" secondAttribute="bottom" constant="6" id="DYC-pN-5Mg"/>
+                                            <constraint firstAttribute="trailing" secondItem="4hj-wf-HxR" secondAttribute="trailing" constant="8" id="UmA-ol-JNA"/>
+                                            <constraint firstItem="4hj-wf-HxR" firstAttribute="top" secondItem="DSv-Fs-F9C" secondAttribute="topMargin" id="ZzZ-C4-QIb"/>
+                                            <constraint firstAttribute="trailing" secondItem="kDp-Vb-nod" secondAttribute="trailing" constant="8" id="fZY-3e-xFG"/>
+                                            <constraint firstItem="4hj-wf-HxR" firstAttribute="leading" secondItem="DSv-Fs-F9C" secondAttribute="leading" constant="8" id="kuo-OG-kDj"/>
+                                            <constraint firstItem="kDp-Vb-nod" firstAttribute="leading" secondItem="DSv-Fs-F9C" secondAttribute="leading" constant="8" id="wzl-fK-EJ6"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Apx-gz-Xar">
@@ -236,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="143"/>
+            <point key="canvasLocation" x="352.80000000000001" y="14.842578710644679"/>
         </scene>
     </scenes>
 </document>
